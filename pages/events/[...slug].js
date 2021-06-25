@@ -3,6 +3,7 @@ import { useRouter } from 'next/router'
 
 import { getFilteredEvents } from '../../events-data'
 import EventList from '../../components/EventList'
+import EventsSearch from '../../components/EventsSearch'
 
 const FilteredEventsPage = () => {
     const router = useRouter();
@@ -19,7 +20,12 @@ const FilteredEventsPage = () => {
     console.log(filteredEvents);
 
     if(!filteredEvents || filteredEvents.length <=0 || isNaN(filterdYear) || isNaN(filterdMonth)){
-        return <h1 className="center">NO ITEM FOUND!</h1>
+        return (
+            <>
+                <EventsSearch />
+                <h1 className="center">NO ITEM FOUND!</h1>
+            </>
+        )
     }
 
     return (

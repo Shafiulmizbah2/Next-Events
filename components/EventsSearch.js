@@ -7,7 +7,7 @@ import classes from "./eventSearch.module.css";
 
 const EventsSearch = (props) => {
     const router = useRouter();
-    const [event,setEvent] = useState({ year:"2021",month:"January"})
+    const [event,setEvent] = useState({ year:"2021",month:"1"})
 
     const handleChange = (e)=>{
         const name = e.target.name;
