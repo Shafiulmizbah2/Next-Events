@@ -30,6 +30,7 @@ const FilteredEventsPage = () => {
 
     return (
         <>
+            <EventsSearch />
             <EventList item={filteredEvents} />
         </>
     )
