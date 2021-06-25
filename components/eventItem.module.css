@@ -8,6 +8,7 @@
     flex-direction: column;
     gap: 1rem;
     max-width: 40rem;
+    overflow:hidden ;
   }
   
   .item img {
