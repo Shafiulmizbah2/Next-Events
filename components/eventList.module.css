@@ -1,0 +1,8 @@
+.list {
+    width: 90%;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
