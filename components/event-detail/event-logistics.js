@@ -1,7 +1,7 @@
 import Location from '../icons/Location';
 import Time from '../icons/Time';
 import LogisticsItem from './logistics-item';
-import Image from 'react/image'
+import Image from 'next/image'
 import classes from './event-logistics.module.css';
 
 function EventLogistics(props) {
